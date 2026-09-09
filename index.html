@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IBPS RRB PO — 70 Day Master Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div>
+        <h1>📚 IBPS RRB PO</h1>
+        <p>70-Day Master Study Tracker</p>
+    </div>
+
+    <button id="resetBtn" class="reset-btn">
+        Reset Progress
+    </button>
+</header>
+
+
+<main class="container">
+
+    <!-- DASHBOARD -->
+
+    <section class="dashboard">
+
+        <div class="stat-card">
+            <span>Overall Progress</span>
+            <strong id="overallPercent">0%</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Completed</span>
+            <strong id="completedCount">0</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Remaining</span>
+            <strong id="remainingCount">0</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Current Day</span>
+            <strong id="currentDayDisplay">1</strong>
+        </div>
+
+    </section>
+
+
+    <!-- OVERALL PROGRESS -->
+
+    <section class="progress-section">
+
+        <div class="progress-header">
+            <span>70-Day Completion</span>
+            <span id="progressText">0 / 0 tasks</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+
+    </section>
+
+
+    <!-- NAVIGATION -->
+
+    <section class="navigation">
+
+        <button id="previousBtn">
+            ← Previous
+        </button>
+
+        <select id="daySelect"></select>
+
+        <button id="nextBtn">
+            Next →
+        </button>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Quant, Reasoning, Percentage, Puzzle, Mock..."
+        >
+
+    </section>
+
+
+    <!-- DAY HEADER -->
+
+    <section class="day-header">
+
+        <div>
+            <p class="day-label">STUDY DAY</p>
+            <h2 id="dayTitle">Day 1</h2>
+        </div>
+
+        <div class="day-progress-box">
+            <span id="dayPercent">0%</span>
+            <small>Day Progress</small>
+        </div>
+
+    </section>
+
+
+    <!-- SCHEDULE -->
+
+    <section id="scheduleContainer"></section>
+
+
+    <!-- REVISION STRATEGY -->
+
+    <section class="revision-card">
+
+        <h2>🔄 Revision Strategy</h2>
+
+        <div class="revision-grid">
+
+            <div>
+                <strong>R1</strong>
+                <span>Next Day</span>
+            </div>
+
+            <div>
+                <strong>R2</strong>
+                <span>+3 Days</span>
+            </div>
+
+            <div>
+                <strong>R3</strong>
+                <span>+7 Days</span>
+            </div>
+
+            <div>
+                <strong>R4</strong>
+                <span>+14 Days</span>
+            </div>
+
+            <div>
+                <strong>R5</strong>
+                <span>+28 Days</span>
+            </div>
+
+            <div>
+                <strong>R6</strong>
+                <span>Final Revision</span>
+            </div>
+
+        </div>
+
+        <p>
+            If accuracy is below 80%, retry the weak topic within 2–3 days.
+            Quant revision generally uses 10–25 questions, Reasoning uses
+            10–15 questions, and puzzles/seating use 1–2 sets.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>
+            IBPS RRB PO Prelims • 70-Day Master Tracker
+        </p>
+
+        <p>
+            Your progress is automatically saved on this device.
+        </p>
+    </footer>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
